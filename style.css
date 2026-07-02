@@ -1,0 +1,367 @@
+html {
+    background-color: rgb(230, 229, 220);
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: darkturquoise;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    color: darkturquoise;
+}
+
+p {
+    font-size: 25px;
+    color: rgb(83, 220, 20);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+button {
+    color: rgb(2, 204, 255);
+    background-image: url(3.jpg);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+button:hover {
+    transition: 5s;
+    color: #e6cf00;
+    background-image: url(5.jpg);
+}
+h1, h2, p {
+    margin-bottom: 12px;
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+#hero {
+    padding: 40px 20px;
+    border-radius: 106px;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.badge {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-image: url(1.jpg);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.highlight {
+    color: rgb(14, 236, 181);
+    text-align: center;
+    font-weight: 500;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    padding: 29px;
+    margin-top: 30px;
+    border-radius: 106px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 9px;
+    color: aqua;
+}
+
+input {
+    display: block;
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 13px;
+    border: 2px solid rgb(228, 1, 1);
+    border-radius: 9px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fbff00;
+    background-image: url(3.jpg);
+    transition: 2s;
+}
+
+#button {
+    text-align: center;
+}
+
+h1, h2, p, h3, #button, form {
+    font-style: oblique;
+}
+
+#name {
+    font-weight: 500;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: rgb(241, 0, 0);
+    font-style: oblique;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    padding: 32px 40px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: aquamarine;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #c2b30a;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 255, 255);
+    transition: 2s;
+}
+
+/* ── AI Agents Section ── */
+.ai-agents {
+    margin-top: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: darkturquoise;
+    margin-bottom: 30px;
+    font-style: oblique;
+}
+
+/* ── Cards Grid: 3 equal columns ── */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* ── Individual AI Card ── */
+.ai-card {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ai-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.25);
+}
+
+/* ── Image area with label on top ── */
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-image-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: darkturquoise;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 12px;
+    letter-spacing: 0.5px;
+    font-style: oblique;
+    backdrop-filter: blur(4px);
+}
+
+/* ── Card Body ── */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body h3 {
+    color: darkturquoise;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-style: normal;
+    flex: 1;
+}
+
+/* ── Card Link Buttons ── */
+.card-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: darkturquoise;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: chartreuse;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: darkturquoise;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid darkturquoise;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: darkturquoise;
+    color: #000;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #hero {
+        border-radius: 30px;
+    }
+
+    .card {
+        border-radius: 30px;
+    }
+}
+
+/* ── Validation: input error border ── */
+.input-error {
+    border-color: crimson !important;
+    background-color: rgba(220, 20, 60, 0.08) !important;
+}
+
+/* ── Validation: error message text ── */
+.error-msg {
+    display: block;
+    color: crimson;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    font-style: normal;
+    animation: fadeIn 0.3s ease;
+}
+
+/* ── Success Banner ── */
+#success-banner {
+    margin-top: 20px;
+    padding: 16px 24px;
+    background: rgba(0, 200, 150, 0.2);
+    border: 1px solid rgba(0, 200, 150, 0.5);
+    border-radius: 20px;
+    color: #00e6a0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Error Messages ── */
+.error-msg {
+    display: block;
+    color: crimson;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-style: normal;
+}

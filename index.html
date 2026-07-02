@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type ="image.png" href="illustrator.png" >
+</head>
+<body>
+    <nav class="navbar">
+        <h2>My Website</h2>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#form-section">Form</a>
+        </div>
+    </nav>
+    <div id="hero">
+        <span class="badge">New Project</span>
+        <h1>Welcome to My Project</h1>
+        <p>This is my first project with Sprix in Learning Web development</p>
+        <h2>About Me</h2>
+        <p>My name is Zeyad, I'm 16. I'll ask you a Question</p>
+    </div>
+
+    <section id="ai-agents" class="ai-agents">
+        <h2 class="section-title">AI Agents</h2>
+        <div class="cards-grid">
+
+            <div class="ai-card">
+                <div class="card-image-wrapper">
+                    <img src="gemini.jpg" alt="Gemini AI">
+                    <div class="card-image-label">Google's AI Assistant</div>
+                </div>
+                <div class="card-body">
+                    <h3>Gemini AI</h3>
+                    <p>Gemini is an AI agent from Google. Multimodal, fast, and deeply integrated with Google services.</p>
+                    <div class="card-links">
+                        <a href="http://gemini.google.com" class="btn-primary">Open Gemini</a>
+                        <a href="https://www.ibm.com/think/topics/google-gemini" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-card">
+                <div class="card-image-wrapper">
+                    <img src="chat gbt.jpg" alt="ChatGPT AI">
+                    <div class="card-image-label">OpenAI's Chatbot</div>
+                </div>
+                <div class="card-body">
+                    <h3>ChatGPT</h3>
+                    <p>ChatGPT is an AI agent from OpenAI. Versatile, widely used, and great for writing and coding tasks.</p>
+                    <div class="card-links">
+                        <a href="https://chatgpt.com/" class="btn-primary">Open ChatGPT</a>
+                        <a href="https://www.ibm.com/think/topics/chatgpt" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-card">
+                <div class="card-image-wrapper">
+                    <img src="claude.jpg" alt="Claude AI">
+                    <div class="card-image-label">Anthropic's AI</div>
+                </div>
+                <div class="card-body">
+                    <h3>Claude AI</h3>
+                    <p>Claude is an AI agent from Anthropic. Thoughtful, safe, and excellent at nuanced reasoning and analysis.</p>
+                    <div class="card-links">
+                        <a href="https://claude.ai/new" class="btn-primary">Open Claude</a>
+                        <a href="https://www.ibm.com/think/topics/claude-ai" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="card" id="form-section">
+        <h3 class="highlight">Please, Enter your personal information</h3>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Your age">
+            <label for="gmail">Gmail</label>
+            <input type="email" id="gmail" placeholder="you@example.com" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="************">
+            <div id="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
